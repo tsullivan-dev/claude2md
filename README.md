@@ -39,3 +39,20 @@ No build system — edit files and reload the extension.
 After changes: click **Reload** on the extension card in `about:debugging`, then refresh the Claude.ai tab.
 
 Requires Firefox 109+.
+
+## Building
+
+```sh
+bash scripts/build.sh
+```
+
+Produces `web-ext-artifacts/claude2md-{version}.zip` ready for AMO submission.
+
+## Releasing
+
+1. Bump `version` in `manifest.json`
+2. `git commit -am "Bump version to X.Y.Z"`
+3. `git tag vX.Y.Z`
+4. `git push && git push --tags`
+
+GitHub Actions will build the zip and create a release automatically.
