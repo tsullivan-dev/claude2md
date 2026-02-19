@@ -1,0 +1,18 @@
+# Extension packaging
+*.xpi
+*.zip
+web-ext-artifacts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Claude Code
+CLAUDE.md
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+.vscode/

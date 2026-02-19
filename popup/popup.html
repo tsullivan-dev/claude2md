@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>claude2md</h1>
+
+    <div class="option">
+      <label class="toggle">
+        <input type="checkbox" id="includeThinking" checked>
+        <span class="slider"></span>
+      </label>
+      <span class="option-label">Include thinking blocks</span>
+    </div>
+
+    <div class="option">
+      <label class="toggle">
+        <input type="checkbox" id="includeArtifacts" checked>
+        <span class="slider"></span>
+      </label>
+      <span class="option-label">Include artifacts</span>
+    </div>
+
+    <div class="option">
+      <label class="toggle">
+        <input type="checkbox" id="includeTimestamps">
+        <span class="slider"></span>
+      </label>
+      <span class="option-label">Include timestamps</span>
+    </div>
+
+    <div class="option">
+      <label class="toggle">
+        <input type="checkbox" id="includeMetadata">
+        <span class="slider"></span>
+      </label>
+      <span class="option-label">Include metadata (URL, date, model)</span>
+    </div>
+
+    <div class="btn-row">
+      <button id="exportBtn">Export .md</button>
+      <button id="copyBtn" class="secondary">Copy</button>
+    </div>
+    <div id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
